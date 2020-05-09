@@ -1,0 +1,109 @@
+body  {
+	background-color: Black;
+	margin: 0;
+	line-height: 1.2;
+	display: flex;
+	flex-direction: column;
+}
+.active {
+	background-color:black;
+}
+.header-container {
+	flex-direction: row;
+	display: static;
+	background-color: Gainsboro;  
+	opacity: 0.9;
+	text-align : center;
+}
+
+.header-container__name {
+	font-family: IMPACT;
+	color: black;
+	font-size: 50px;
+}
+
+.header-container__pages {
+padding: 10px;
+}
+
+.header-container__pages_item {	
+	display : inline-block;
+	margin : 5px 1px;
+	background-color:OliveDrab;
+	color: white;
+	text-decoration: none;
+	padding: 10px;
+	font-size: 24px;
+}
+
+.active__pages_item {
+	background-color:black;
+}
+footer { 
+	font-size: 15px;
+	background-color: Black;
+	color: white;
+}
+
+
+
+.about-block {
+	margin : 5px;
+	background-color: OliveDrab;
+}
+
+.about-block__header {
+	color: white;
+	margin: 30px 0; 
+	text-align: center;
+}
+
+.about-block__section {
+	display: grid;
+	grid-template-columns: auto auto;
+	grid-template-rows: 50px auto;
+	max-width: 1000px;
+	color: white;
+	padding: 10px;
+	margin: 30px auto; 
+}
+
+.about-block__section_name {
+  padding: 10px;
+}
+
+.about-block__section_text {
+  padding: 10px;
+}
+
+.about-block__section_image {
+  max-width: 300px;
+  box-sizing: border-box;
+  border: 5px solid black;
+  grid-row: 1 / 3;
+}
+
+
+@media (max-width: 720px) {
+.about-block__section {
+    display: flex;
+    flex-direction: column;
+}
+  
+.about-block {
+	display: flex;
+	flex-direction: column;
+}
+
+.header-container {
+	display: flex;
+	flex-direction: column;
+}
+
+.header-container__name {
+	font-size: 30px;
+}
+.header-container__pages_item {	
+	font-size: 15px;
+}
+}
