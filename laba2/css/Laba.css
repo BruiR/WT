@@ -1,0 +1,119 @@
+body  {
+	background-color: OliveDrab;
+	margin: 0;
+	line-height: 1.2;
+	display: flex;
+	flex-direction: column;
+}
+
+.header-container {
+	flex-direction: row;
+	display: static;
+	background-color: Gainsboro;  
+	opacity: 0.9;	
+	align-items : center;
+}
+
+.header-container__image{
+	width: 140px;
+	height: 140px; 
+	align-items: left;
+}
+
+.header-container__name {
+	font-family: IMPACT;
+	color: black;
+	font-size: 50px;
+	margin-bottom: 1px; 
+}
+
+.header-container__pages {
+	padding: 10px;
+}
+
+.header-container__pages_item {	
+	display : inline-block;
+	margin : 5px 1px;
+	color: white;
+	text-decoration: none;
+	padding: 10px;
+	font-size: 24px;
+	background-color:OliveDrab;
+}
+
+.active__pages_item {
+	background-color:black;
+}
+
+.info-block__article {
+	margin: 15px;
+	font-family: Courier;	
+	color: black;
+	font-size: 24px;
+	opacity: 0.8;
+	text-indent: 15px;
+}
+
+
+.info-block {
+	margin : 5px;
+	background-color: Gainsboro;
+}
+
+
+.info-block__tagline {
+	font-size : 24px;
+	text-align : center;
+	padding : 10px;
+}
+
+footer { 
+	font-size: 15px;
+	background-color: Black;
+	color: white;	
+}
+
+main{
+	display: flex;
+	flex-direction: column;
+}
+
+.form-container{
+	margin : 5px;
+	background-color: YellowGreen;	
+		font-size: 36px;
+}
+
+@media (max-width: 1000px) {
+main{
+	display: flex;
+	flex-direction: column;
+}
+
+.form-container{
+	font-size: 20px;
+}
+
+}
+
+@media (max-width: 720px) {
+main{
+	display: flex;
+	flex-direction: column;
+}
+
+.header-container {
+	display: flex;
+	flex-direction: column;
+}
+
+.header-container__name {
+	font-size: 30px;
+}
+
+.header-container__pages_item {	
+	font-size: 15px;
+}
+
+
+}
