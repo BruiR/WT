@@ -27,7 +27,7 @@
                 }else{
                     $str="<a href =". $matches[0]." style=\"color:red;\">".$matches[0]."</a>";
                 }
-			  return $str; 
+			    return $str; 
             }
 			
             if (is_file('input.txt'))
